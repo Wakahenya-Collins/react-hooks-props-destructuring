@@ -1,4 +1,5 @@
 import React from "react";
+// import SocialMedia from "./SocialMedia";
 import MovieCard from "./MovieCard";
 
 function App() {
@@ -9,9 +10,22 @@ function App() {
 
   return (
     <div className="App">
-      <MovieCard title={title} genres={genresArr} />
+      {/* passing down props from the parent component */}
+      <MovieCard title={title} posterSrc={posterURL} genres={genresArr} />
     </div>
   );
 }
+// function App() {
+//   const socialLinks = {
+//     github: "https://github.com/liza",
+//     linkedin: "https://www.linkedin.com/in/liza/",
+//   };
+
+//   return (
+//     <div>
+//       <SocialMedia links={socialLinks} />
+//     </div>
+//   );
+// }
 
 export default App;
